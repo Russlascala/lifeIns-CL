@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Carrington Life</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Poppins|Source+Sans+Pro" rel="stylesheet">
+     <!-- font-family: 'Source Sans Pro', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Josefin Sans', sans-serif; -->
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Section top bar with number, bottom bar tagtext and form -->
+    <header>
+        <div class="container">
+            <div class="row" style="background: #fff; padding-bottom:5px;">
+                <div class="col-6">
+                    <img src="imgs/logoBG.png" class="img-responsive" id="logoImg" alt="Carrington Life">
+                </div>
+                <div class="col-6">
+                    <p class=" float-right" id="phoneTop">
+                        <i class="fa fa-phone fa-fw"></i> 1-888-555-5555
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="topBarTxt">
+            <div class="col-12">
+                <h4 class="h4-responsive font-weight-bold mainTxt" id="sloganOne"> Protect Your Family’s Future with Life Insurance</h4>
+            </div>
+        </div>
+        <!-- Full Page Intro -->
+        <div class="view">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient d-flex justify-content-center align-items-center"></div>
+            <!-- Content -->
+            <div class="container">
+
+                <!-- Left Side Text  -->
+                <div class="row pt-2">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 white-text text-center text-md-left" style="margin: auto 0;">
+                        <div class="sloganTwo col-md-12">
+                            <h6>Get $250,000 of Term Life Insurance Coverage for as low as $15 per month!</h6>
+
+                        </div>
+                    </div>
+                    <!--  Right Side form  -->
+                    <div class="col-md-6 mb-4 pt-2">
+
+                        <!--Form-->
+                        <form class="card" id="form" data-toggle="validator" onSubmit="if(!confirm('ERROR OOPS! This is only a demo site')){return false;}">
+                            <div class="card-body">
+
+                                <!--Header of form-->
+                                <div class="text-center">
+                                    <h3 class="formHead">It takes Just a Couple Minutes to Request Your Quote</h3>
+                                    <hr class="hr-light">
+                                </div>
+                                <!--Body of form-->
+                                <div class="row">
+
+                                    <!-- First name form field-->
+                                    <div class="md-form col-sm-6">
+                                        <input type="text" id="fName-form" class="white-text form-control" placeholder="First Name" required="required">
+                                    </div>
+
+                                    <!-- Last name form field-->
+                                    <div class="md-form col-sm-6">
+                                        <input type="text" id="Lname-form" class="white-text form-control" placeholder="Last Name" required="required">
+                                    </div>
+                                </div>
+
+                                <!-- Email form field-->
+                                <div class="md-form">
+                                    <input type="email" id="email-form" class="white-text form-control" placeholder="Email" data-error="Bruh, that email address is invalid"
+                                        required="required">
+                                </div>
+
+                                <!-- Phone form field-->
+                                <div class="md-form">
+                                    <input type="text" id="phone-form" class="white-text form-control" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Phone: 123-456-7890"
+                                        required="required">
+                                </div>
+
+                                <!-- Zip form field-->
+                                <div class="md-form">
+                                    <input type="text" id="zip-form" class="white-text form-control" pattern="^\d{5}(?:[-\s]\d{4})?$" placeholder="Zip" required="required">
+                                </div>
+
+                                <!-- Date of birth form field-->
+                                <div class="md-form">
+                                    <div class="register-form-row-col formLabel">Date Of Birth:</div>
+                                    <div class="register-form">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <select class="form-control dob-dropdwn" required id="month-form" name="month" onchange="call()">
+                                                    <option value="">Month</option>
+                                                    <option value="1">Jan</option>
+                                                    <option value="2">Feb</option>
+                                                    <option value="3">Mar</option>
+                                                    <option value="4">Apr</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">Jun</option>
+                                                    <option value="7">Jul</option>
+                                                    <option value="8">Aug</option>
+                                                    <option value="9">Sep</option>
+                                                    <option value="10">Oct</option>
+                                                    <option value="11">Nov</option>
+                                                    <option value="12">Dec</option>
+                                                </select>
+                                            </div>
+                                            <!-- Day : -->
+                                            <div class="col-3" style="padding:0">
+                                                <select class="form-control dob-dropdwn" required id="day-form" name="day">
+                                                    <option value="">Day</option>
+                                                </select>
+                                            </div>
+                                            <!-- Year: -->
+                                            <div class="col-4">
+                                                <select class="form-control dob-dropdwn" required id="year-form" name="year" onchange="call()">
+                                                    <option value="">Year</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Coverage amount  -->
+                                <div class="md-form">
+                                    <label class="formLabel" style="margin-bottom:0;">Coverage Amount:</label>
+                                    <select class="form-control" required="required">
+                                        <option value="">Select</option>
+                                        <option value="$5,000">$5,000</option>
+                                        <option value="$10,000">$10,000</option>
+                                        <option value="$20,000">$20,000</option>
+                                        <option value="$30,000">$30,000</option>
+                                        <option value="$40,000">$40,000</option>
+                                        <option value="$50,000">$50,000</option>
+                                        <option value="$60,000 +">$60,000 + </option>
+                                    </select>
+                                </div>
+                               <!--  height and weight -->
+                                <div class="row">
+                                    <!-- Email form field-->
+                                    <div class="md-form col-6">
+                                        <input type="email" id="email-form" class="white-text form-control" placeholder="Height" data-error="Bruh, that email address is invalid"
+                                            required="required">
+                                    </div>
+                                
+                                    <!-- Phone form field-->
+                                    <div class="md-form col-6">
+                                        <input type="text" id="phone-form" class="white-text form-control" placeholder="Weight"
+                                            required="required">
+                                    </div>
+                                </div>
+                                <!-- gender and smoker -->
+                                <div class="row" id="genSmoker">
+
+                                    <div class="col-6">
+                                        <select class="form-control" required="required">
+                                            <option value="">Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="col-6">
+                                        <select class="form-control" required="required">
+                                            <option value="">Smoker</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="text-center">
+                                    <button class="btn" id="submitBtn" type="submit">GET QUOTES NOW!</button>
+                                    <div id="messages_content"></div>
+                                </div>
+                                <div class="md-form" style="font-size:10px">
+                                    <img src="imgs/secure-logos.png" alt="secure" style="display:block; margin-left: auto; margin-right: auto;margin-top:10px; margin-bottom: 10px; width:100%;">
+                                    <hr class="hr-light" style="margin:1px">
+                                    <p style="margin-bottom: 0;">
+                                        By clicking the "GET QUOTES NOW!" button, you agree to our Privacy Policy and authorize Carrington Life and its partners
+                                        to contact you at the phone number you entered using automated technology including
+                                        auto-dialers, pre-recorded messages, and text messages, even if your phone is a mobile
+                                        number or is currently listed on any state, federal, or corporate "Do Not Call" list,
+                                        and you are not required to give your consent as a condition of service.</p>
+
+                                </div>
+                            </div>
+                        </form>
+                        <!--/. End of Form-->
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+        <!-- Full Page Intro -->
+    </header>
+    <!-- END Top Section top bar with number, bottom bar tagtext and form -->
+    <main>
+        <!-- section two top -->
+        <div id="sectionTwo">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-12 text-center" id="bigTextArr">
+                        Getting life insurance is easier than you think!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start of info about life insurance and family photo -->
+        <div class="container">
+            <div class="row py-5 sloganTwoMobile">            
+                <div class="col-md-6 ">
+                    <h5 style="font-weight:bold;">Affordable Life Insurance For Everyone.</h5>
+                    <p>If your family depends on your salary, life insurance is a critical piece of making arrangements for your
+                    family's future. It's bleak, and nobody likes to get ready for their passing, however a little uneasiness presently can spare
+                    your family a universe of monetary pressure should the most noticeably awful happen.</p>
+                    <p>
+                         The two main types of life insurance are term and whole life. Whole life is in some cases permanent life insurance, and
+                        it incorporates a few subcategories, including traditional whole life, universal life, variable life and variable universal
+                        life.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="imgs/family-phot.jpg" alt="Family Photo" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <!-- End of info about life insurance and family photo -->
+        <!-- CTA button -->
+        <!-- <button type="button" onclick="scrollToTop(200)" class="btn hoverable ctaBtn" title="Get A Quote">Get A Quote</button> -->
+        <!-- Blue line fade -->
+        <div class="lineFade2"></div>
+        <!--Start of term life info an image Section -->
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12">
+                    <h2>Term Life Insurance</h2>
+                </div>
+                <div class="col-lg-6" style="margin: auto;">
+                    <img src="imgs/coverageMF-term.png" style="width:60%;display: block; margin:0 auto;" alt="">
+                    <p class="asterTxt">*These rates are for a 40 year old healthy nonsmoking female and male buying a 10 year “Term Life Insurance Policy”. These
+                    rates may vary depending on your age, duration of term and other risk factors.</p> 
+                </div>
+                <div class="col-lg-6" id="sectionTermLife">
+                    <h5 style="color:#00558a; display:inline; background:#f2cd41;">Term Life Insurance can now be had for as little as $15 per month.</h5>
+                    <p style="font-size:16px;">
+                         Term Life Insurance is extremely popular since it is one of the least complex and most affordable Life Insurance products
+                        available. When death occurs, the deceased beneficiaries get paid money if it was during the term of the policy, which is
+                        usually between one and 30 years.</p>
+                    <p>There are two basic types of Term Life Insurance level term and decreasing term. Level term means that the death benefit
+                        stays the same throughout the duration of the policy. Decreasing term means that the death benefit drops, usually in one-year
+                        increments, over the course of the policy’s term. To find out more information
+                        <span class="txtLink" onclick="scrollToTop(200)">request a quote today.</span>
+                    </p>
+                    <!-- <p style="text-align: left; font-size:12px; color: gray;">*These rates are for a 40 year old healthy nonsmoking female and male buying a 10 year “Term Life Insurance Policy”. These
+                    rates may vary depending on your age, duration of term and other risk factors.</p> -->
+                </div>
+            </div>
+        </div>
+        <!--End of term life info an image Section -->
+
+        <!-- CTA button -->
+        <button type="button" onclick="scrollToTop(200)" class="btn hoverable ctaBtn" title="Request A Quote">Request A Quote</button>
+        <div class="lineFade2"></div>
+        <!--Start of Whole life info an image Section -->
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12">
+                    <h2>Whole Life Insurance</h2>
+                </div>
+                <div class="col-lg-6" id="sectionTermLife">
+                    <!-- <h5 style="color:#00558a; display:inline; background:#f2cd41;">Term Life Insurance can now be had for as little as $15 per month.</h5> -->
+                    <p style="font-size:16px;">
+                         Whole life or permanent insurance pays a death benefit at whatever point you kick the bucket—regardless of whether you live
+                        to 100! There are three noteworthy kinds of Whole life or permanent life insurance— traditional whole life, universal life,
+                        and variable universal life, and there are varieties inside each sort.</p>
+                    <p>
+                        On account of traditional whole life, both the death benefit and the premium are aimed to remain the same (level) for the
+                        duration of the policy. The cost per $1,000 of benefit increases as the protected individual ages, and it gets higher when
+                        the person lives over 80 years old. The insurance agency could charge a premium that builds every year, except that would
+                        make it difficult for the vast majority to manage the cost of life coverage at cutting edge ages. So the company keeps the
+                        premium level by charging a premium that, in the early years, is higher than what's expected to pay claims, investing that
+                        money, and after that utilizing it to supplement the level premium to help pay the cost of insurance for older individuals.
+                    </p>
+                    <p>
+                        By law, when these "overpayments" achieve a specific sum, they must be available to the policyholder as a cash value on
+                        under the policy. In the 1970s - 1980s, life insurance organizations announced two variations from the customary whole life
+                        product— universal life insurance and variable universal life insurance. To find out more information <span class="txtLink" onclick="scrollToTop(200)">request a quote today.</span>
+
+                    </p>
+                </div>
+                <div class="col-lg-6" style="margin:auto">
+                    <img src="imgs/coverageMF-whole.png" style="width:60%;display: block; margin:0 auto;" alt="Whole Life Insurance Price">
+                    <p class="asterTxt">*These rates are for a 40 year old healthy nonsmoking female and male buying a “Whole Life Insurance Policy”. These rates
+                    may vary depending on your age and other risk factors.</p>
+                </div>
+            </div>
+        </div>
+        <!-- CTA button -->
+        <button type="button" onclick="scrollToTop(200)" class="btn hoverable ctaBtn" title="Request A Quote">Request A Quote</button>
+        <!-- Section Five Logo above footer -->
+        <div id="sectionFive">
+            <div class="container">
+                <div class="col-lg-12 text-center">
+                    <img class="img-responsive" id="footerLogo" alt="Carrington Life Logo" src="imgs/logoBG.png">
+                </div>
+            </div>
+        </div>
+        <!-- Blue line fade -->
+        <div class="lineFade"></div>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-12 text-center" id="altLinks">
+                        <a href="#">Privacy Policy</a> |
+                        <a href="#">Terms of Use</a> |
+                        <a href="#">Unsubscribe</a>
+                    </div>
+                    <div class="col-lg-12 text-center" id="copyRight">
+                        &copy; 2018
+                        <a href="#"> CarringtonLife.com</a> All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!--Main Layout-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <!-- Custom Js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

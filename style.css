@@ -1,0 +1,324 @@
+body {
+   /* font-family: 'Roboto', sans-serif; */
+   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+/* top section */
+.topBarTxt{
+    background: #35b5d2;
+}
+.view{
+    background-image: url('../imgs/famsun.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+} 
+#sloganOne{
+    text-align: center;
+    color: #fff;
+    padding-bottom:5px;
+    padding-top: 5px;
+    margin-bottom:0;
+}
+
+.sloganTwo {
+    padding:20px 20px 20px 20px;
+    /* background-color: rgba(215, 201, 123, 0.2); */
+    /*  background: linear-gradient(hsla(0, 0%, 100%, 0), rgb(40, 4, 141), hsla(0, 0%, 100%, 0)); */
+    /* border: solid 2px whitesmoke; */
+    color: #000;
+    letter-spacing: .1px;
+    /* for txt at bottom */
+    /* margin-top:550px; */
+    /* for text at top  */
+    margin-top: -300px;
+}
+
+.sloganTwo h6 {
+    font-size:35px;
+    text-shadow: 2px 2px white;
+    font-weight: bold;
+}
+
+
+/*-- Form Styles original color #d3d3d3 #B1E1F7-- */ 
+
+.formHead{
+    font-size:27px;
+    color: #fff;
+}
+
+.formLabel{
+    font-weight: bold;
+}
+
+.card {
+    /* background: #dfe6e9; */
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+}
+
+#genSmoker{
+     margin-bottom: 10px;
+}
+
+.md-form, input {
+    padding-bottom:6px;
+}
+
+.dob-dropdwn.form-control {
+    padding: .1rem .1rem;
+}
+
+#icons-2 {
+    width: 100%;
+    height: 90%;
+} 
+
+
+#phoneTop{
+    color: #00344D;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+    margin-top: 15px;
+}
+    
+#logoImg{
+    margin-top: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+.btn {
+    background-color:#008952;
+    font-weight: bold;
+    color: white;
+}
+
+.btn:hover {
+  transition : 0.3s;
+  box-shadow : 0px 0px 1px 6px #559CD3;
+  cursor : pointer;
+}
+
+#submitBtn {
+    width: 100%;
+    padding:5px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/*   end Form section */
+
+/*   end top section */
+
+/*   second section */
+#sectionTwo{
+    background: #35b5d2;
+}
+#sectionTwo, .row.py-5{
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+
+
+
+#bigTextArr{
+    font-size: 32px; 
+    color: whitesmoke;
+}
+.ctaBtn{
+    color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+    background: #008952; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    line-height: 100px;
+    font-family: Arial;
+    margin-bottom:20px; 
+    margin-top:5px; 
+}
+#bigText{
+   font-size: 20px; 
+   /* padding-left: 35px;
+   padding-right: 75px; */
+   color: black;
+}
+/*   end second section */
+
+#sectionTermLife{
+    padding-top: 10px;
+}
+.asterTxt{
+    text-align: left;
+    font-size:12px;
+    color: gray;
+    max-width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+}
+
+.lineFade2{ 
+    height:1px;
+    background: #333333;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#fff), to(#fff), color-stop(50%, #35b5d2));
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.txtLink{
+    color:#1f90d6 !important;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+.txtLink:hover{
+    cursor: pointer;
+}
+
+/* footer */
+/*   five section */
+#sectionFive{
+    background-color: #333333;
+   
+}
+
+/* footer */
+#footerLogo{
+    width:20%;
+    margin:5px;
+}
+.lineFade{ 
+    height:1px;
+    background: #333333;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#333333), to(#333333), color-stop(50%, #35b5d2));
+}
+
+footer{
+    background-color: #333333;
+    color: white;
+}
+
+footer, a{
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #E6F4F1;
+}
+footer a:hover{
+    color: #81C4FD;
+}
+
+#altLinks{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+#copyRight{
+    font-size: 12px;
+}
+
+
+/*   end footer section */
+
+/*   responsive styles */
+/*  Extra extra small devices (portrait phones, less than 425px) this is a fix for icons-2.png for small screens */
+@media (max-width: 425px) { 
+
+    #phoneTop {
+        font-size: 16px;
+    }
+
+    #sloganOne{
+        font-size: 16px;
+    }
+    .ctaBtn{
+        width: 200px;
+        font-size: 120%;
+        line-height: 75px;
+        font-family: Arial;
+        margin-bottom:15px; 
+        margin-top:15px; 
+    }
+    
+}
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    
+    #phoneTop {
+        font-size: 16px;
+    }
+
+    #submitBtn {
+        font-size: 16px;
+    }
+    
+    #sloganOne{
+        font-size: 19px;
+    }
+
+    #bigText{
+        font-size: 18px;
+    }
+
+    .sloganInfo {
+        margin-top: 30px;
+    }
+    .sloganInfo, h6{
+        font-size: 16px;
+    }
+
+
+ }
+
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .mt-5, .my-5 {
+        /* margin-top: 1.5rem!important; */
+        margin-top: 15px!important;
+    }
+    .sloganTwo {
+        display: none;
+    }
+
+    /* .view{
+        background-color: #ACE5F8;
+        background-image: none;
+    } */
+
+    .formHead{
+        font-size: 19px;
+    }
+
+    #bigTextArr{
+        font-size: 24px; 
+    }
+
+    .sloganTwoMobile{
+        padding:5px;
+        font-weight: bold;
+        color: #000;
+        font-size: 16px;
+        letter-spacing: .1px;
+    }
+
+    
+ }
+
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+ }
+
+/*  Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    #sloganTwo{
+        margin-top: 350px;
+    }
+ }
