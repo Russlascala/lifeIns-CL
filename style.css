@@ -31,11 +31,11 @@ body {
     /* for txt at bottom */
     /* margin-top:550px; */
     /* for text at top  */
-    margin-top: -300px;
+    margin-top: -380px;
 }
 
 .sloganTwo h6 {
-    font-size:35px;
+    font-size:25px;
     text-shadow: 2px 2px black;
     font-weight: bold;
 }
@@ -238,6 +238,9 @@ footer a:hover{
     #phoneTop {
         font-size: 16px;
     }
+    .formHead{
+        font-size: 21px!important;  
+    }
 
     #sloganOne{
         font-size: 16px;
@@ -263,15 +266,18 @@ footer a:hover{
         font-size: 16px;
     }
 
+    .formHead{
+        font-size: 21px;  
+    }
     .sloganTwo{
         padding: 0;
     }
 
     .sloganTwo h6 {
         /* display: none; */
-        font-size: 25px;
-        text-shadow: 2px 2px black;
-        color: #fff;
+        font-size: 16px;
+        text-shadow: 2px 2px #fff;
+        color: #000;
     }
     
     #sloganOne{
@@ -310,8 +316,7 @@ footer a:hover{
     } */
 
     .formHead{
-        font-size: 25px;
-        
+        font-size: 25px;  
     }
     .sloganTwo h6 {
         text-shadow: 2px 2px #000!important;
@@ -339,16 +344,16 @@ footer a:hover{
  /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
     .sloganTwo h6 {
-        text-shadow: 2px 2px #fff;
-        color: #000;
+        text-shadow: 2px 2px #000;
+        color: #fff;
     }
  }
 
 /*  Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 
     .sloganTwo h6 {
-        text-shadow: 2px 2px #fff;
-        color: #000;
+        text-shadow: 2px 2px #000;
+        color: #fff;
     }
     #sloganTwo{
         margin-top: 350px;
@@ -357,7 +362,7 @@ footer a:hover{
 /*  Large devices (any  screen bigger than 1200px) */
 @media screen and (max-width: 1800px) {
     .sloganTwo h6 {
-        text-shadow: 2px 2px #fff;
-        color: #000;
+        text-shadow: 2px 2px #000;
+        color: #fff;
     }
 }
