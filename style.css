@@ -86,6 +86,9 @@ body {
     margin-top: 15px;
 }
 
+#phoneTop a {
+    color: #00344D;
+}
     
 #logoImg{
     margin-top: 5px;
