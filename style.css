@@ -8,7 +8,7 @@ body {
     background: #35b5d2;
 }
 .view{
-    background-image: url('../imgs/famsun.jpg');
+    background-image: url('imgs/famsun.jpg');
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center;
@@ -26,7 +26,7 @@ body {
     /* background-color: rgba(215, 201, 123, 0.2); */
     /*  background: linear-gradient(hsla(0, 0%, 100%, 0), rgb(40, 4, 141), hsla(0, 0%, 100%, 0)); */
     /* border: solid 2px whitesmoke; */
-    color: #000;
+    color: #fff;
     letter-spacing: .1px;
     /* for txt at bottom */
     /* margin-top:550px; */
@@ -36,7 +36,7 @@ body {
 
 .sloganTwo h6 {
     font-size:35px;
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 2px black;
     font-weight: bold;
 }
 
@@ -257,6 +257,17 @@ footer a:hover{
     #submitBtn {
         font-size: 16px;
     }
+
+    .sloganTwo{
+        padding: 0;
+    }
+
+    .sloganTwo h6 {
+        /* display: none; */
+        font-size: 25px;
+        text-shadow: 2px 2px black;
+        color: #fff;
+    }
     
     #sloganOne{
         font-size: 19px;
@@ -283,8 +294,10 @@ footer a:hover{
         margin-top: 15px!important;
     }
     .sloganTwo {
-        display: none;
+        /* display: none; */
+        margin-top:0;
     }
+    
 
     /* .view{
         background-color: #ACE5F8;
@@ -292,12 +305,19 @@ footer a:hover{
     } */
 
     .formHead{
-        font-size: 19px;
+        font-size: 25px;
+        
+    }
+    .sloganTwo h6 {
+        text-shadow: 2px 2px #000!important;
+        color: #fff!important;
     }
 
     #bigTextArr{
         font-size: 24px; 
     }
+
+    
 
     .sloganTwoMobile{
         padding:5px;
@@ -313,12 +333,26 @@ footer a:hover{
 
  /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
-
+    .sloganTwo h6 {
+        text-shadow: 2px 2px #fff;
+        color: #000;
+    }
  }
 
 /*  Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 
+    .sloganTwo h6 {
+        text-shadow: 2px 2px #fff;
+        color: #000;
+    }
     #sloganTwo{
         margin-top: 350px;
     }
  }
+/*  Large devices (any  screen bigger than 1200px) */
+@media screen and (max-width: 1800px) {
+    .sloganTwo h6 {
+        text-shadow: 2px 2px #fff;
+        color: #000;
+    }
+}
