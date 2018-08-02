@@ -266,6 +266,10 @@ footer a:hover{
     #submitBtn {
         font-size: 16px;
     }
+ 
+    .sloganTwo br{
+        display: inline-block;
+    }
 
     .formHead{
         font-size: 21px;  
@@ -310,11 +314,10 @@ footer a:hover{
         margin-top:0;
     }
     
+    .sloganTwo br {
+        display: inline-block!important;
+    }
 
-    /* .view{
-        background-color: #ACE5F8;
-        background-image: none;
-    } */
 
     .formHead{
         font-size: 25px;  
@@ -327,8 +330,6 @@ footer a:hover{
     #bigTextArr{
         font-size: 24px; 
     }
-
-    
 
     .sloganTwoMobile{
         padding:5px;
@@ -348,6 +349,9 @@ footer a:hover{
         text-shadow: 2px 2px #000;
         color: #fff;
     }
+    .sloganTwo br{
+        display: none;
+    }
  }
 
 /*  Large devices (desktops, less than 1200px) */
@@ -359,6 +363,9 @@ footer a:hover{
     }
     #sloganTwo{
         margin-top: 350px;
+    }
+    .sloganTwo br{
+        display: none;
     }
  }
 /*  Large devices (any  screen bigger than 1200px) */
