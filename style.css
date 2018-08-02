@@ -77,7 +77,8 @@ body {
 
 
 #phoneTop{
-    
+    /* 00344D */
+    color: red!important;
     font-size: 20px;
     font-weight: bold;
     width: 100%;
