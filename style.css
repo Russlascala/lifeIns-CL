@@ -35,9 +35,10 @@ body {
 }
 
 .sloganTwo h6 {
-    font-size:25px;
-    text-shadow: 2px 2px black;
+    font-size:35px;
     font-weight: bold;
+    text-shadow: 2px 2px #fff;
+    color: #000;
 }
 
 
@@ -259,7 +260,7 @@ footer a:hover{
 @media (max-width: 575.98px) { 
     
     #phoneTop {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     #submitBtn {
@@ -275,7 +276,7 @@ footer a:hover{
 
     .sloganTwo h6 {
         /* display: none; */
-        font-size: 16px;
+        font-size: 19px!important;
         text-shadow: 2px 2px #fff;
         color: #000;
     }
@@ -354,13 +355,14 @@ footer a:hover{
     .sloganTwo h6 {
         text-shadow: 2px 2px #000;
         color: #fff;
+        font-size: 30px;
     }
     #sloganTwo{
         margin-top: 350px;
     }
  }
 /*  Large devices (any  screen bigger than 1200px) */
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1400px) {
     .sloganTwo h6 {
         text-shadow: 2px 2px #000;
         color: #fff;
