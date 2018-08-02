@@ -8,7 +8,7 @@ body {
     background: #35b5d2;
 }
 .view{
-    background-image: url('imgs/famsun.jpg');
+    background-image: url('imgs/famsun-sm.jpg');
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center;
@@ -243,10 +243,6 @@ footer a:hover{
         font-size: 21px!important;  
     }
 
-    .sloganTwo br {
-        display: inline-block!important;
-    }
-    
     #sloganOne{
         font-size: 16px;
     }
