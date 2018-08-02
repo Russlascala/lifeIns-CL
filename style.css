@@ -243,6 +243,10 @@ footer a:hover{
         font-size: 21px!important;  
     }
 
+    .sloganTwo br {
+        display: inline-block!important;
+    }
+    
     #sloganOne{
         font-size: 16px;
     }
@@ -267,8 +271,8 @@ footer a:hover{
         font-size: 16px;
     }
  
-    .sloganTwo br{
-        display: inline-block;
+    .sloganTwo br {
+        display: inline-block!important;
     }
 
     .formHead{
